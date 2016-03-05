@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="MAT-5L-XvI">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Besucher:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boh-dZ-brg">
+                                <rect key="frame" x="20" y="207" width="82" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wartezeit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chK-Zo-BH3">
+                                <rect key="frame" x="21" y="236" width="80" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zeitstempel:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMF-nH-kf8">
+                                <rect key="frame" x="21" y="294" width="100" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvl-n4-gUI">
+                                <rect key="frame" x="187" y="528" width="226" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="226" id="6ZA-DH-1FG"/>
+                                </constraints>
+                                <state key="normal" image="Ticket.png"/>
+                                <connections>
+                                    <action selector="GetTicket:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bsh-A2-DJ7"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dxx-Dx-lUS">
+                                <rect key="frame" x="225" y="370" width="150" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="dMq-HS-On7"/>
+                                    <constraint firstAttribute="width" constant="150" id="ruM-Oe-Nm6"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nächste Nummer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SE-qc-tMj">
+                                <rect key="frame" x="21" y="265" width="147" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uMF-nH-kf8" firstAttribute="top" secondItem="8SE-qc-tMj" secondAttribute="bottom" constant="8" symbolic="YES" id="0r2-00-FJc"/>
+                            <constraint firstItem="gvl-n4-gUI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="508" id="5QG-EX-HJg"/>
+                            <constraint firstItem="MAT-5L-XvI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7R5-NJ-fN9"/>
+                            <constraint firstAttribute="bottom" secondItem="gvl-n4-gUI" secondAttribute="bottom" constant="20" symbolic="YES" id="8d4-Zt-ee8"/>
+                            <constraint firstItem="gvl-n4-gUI" firstAttribute="top" secondItem="Dxx-Dx-lUS" secondAttribute="bottom" constant="8" id="8py-eI-4hm"/>
+                            <constraint firstAttribute="trailing" secondItem="MAT-5L-XvI" secondAttribute="trailing" id="Ebg-aR-hcW"/>
+                            <constraint firstItem="Dxx-Dx-lUS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LFh-8j-XoU"/>
+                            <constraint firstItem="chK-Zo-BH3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="1" id="MH1-hh-z0t"/>
+                            <constraint firstItem="MAT-5L-XvI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OzK-iQ-cuG"/>
+                            <constraint firstItem="boh-dZ-brg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cWz-Uj-xPS"/>
+                            <constraint firstItem="uMF-nH-kf8" firstAttribute="leading" secondItem="8SE-qc-tMj" secondAttribute="leading" id="cYl-QT-9ly"/>
+                            <constraint firstItem="MAT-5L-XvI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cbL-xa-Vql"/>
+                            <constraint firstItem="MAT-5L-XvI" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="d83-2a-VBa"/>
+                            <constraint firstItem="boh-dZ-brg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="187" id="dl5-Ga-M4y"/>
+                            <constraint firstItem="gvl-n4-gUI" firstAttribute="centerX" secondItem="MAT-5L-XvI" secondAttribute="centerX" id="fD1-u8-Mx0"/>
+                            <constraint firstItem="chK-Zo-BH3" firstAttribute="top" secondItem="boh-dZ-brg" secondAttribute="bottom" constant="8" symbolic="YES" id="kie-fU-mpp"/>
+                            <constraint firstItem="8SE-qc-tMj" firstAttribute="leading" secondItem="chK-Zo-BH3" secondAttribute="leading" id="nA2-L3-i0J"/>
+                            <constraint firstItem="8SE-qc-tMj" firstAttribute="top" secondItem="chK-Zo-BH3" secondAttribute="bottom" constant="8" symbolic="YES" id="zfC-q1-DjN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="TimeStampLabel" destination="uMF-nH-kf8" id="zaY-9t-NgG"/>
+                        <outlet property="nextCallLabel" destination="8SE-qc-tMj" id="116-ly-a8r"/>
+                        <outlet property="visitorsLabel" destination="boh-dZ-brg" id="2pI-QL-l0U"/>
+                        <outlet property="waitLabel" destination="chK-Zo-BH3" id="DHe-TS-Vg2"/>
+                        <outlet property="waitView" destination="Dxx-Dx-lUS" id="dHR-oJ-x9H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="183"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background.png" width="600" height="597"/>
+        <image name="Ticket.png" width="170" height="41"/>
+    </resources>
+</document>
